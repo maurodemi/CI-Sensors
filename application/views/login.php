@@ -19,12 +19,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--    <link rel="stylesheet" href="--><?php //echo $this->config->item('resources')['css']?><!--/style.css">-->
+    <!--<link rel="stylesheet" href="../resources/css/style.css">-->
 </head>
 
 <body>
-    <div>
-    <!--FORM LOGIN-->
+    <div> <!--FORM LOGIN-->
         <form action="home.php" method="post">
             <label for="email">Email:</label>
             <input type="email" name="email" placeholder="Email">
@@ -32,6 +31,10 @@
             <input type="password" name="password" placeholder="Password">
             <button type="submit">Login</button>
         </form>
+    </div>
+    <div> <!--LOGIN FREE-->
+        <br>
+        <a href="home.php"><button>Login free</button></a>
     </div>
 </body>
 </html>

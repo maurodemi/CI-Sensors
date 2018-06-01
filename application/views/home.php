@@ -19,7 +19,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--    <link rel="stylesheet" href="--><?php //echo $this->config->item('resources')['css']?><!--/style.css">-->
+    <!--<link rel="stylesheet" href="--><?php //echo $this->config->item('resources')['css']?><!--/style.css">-->
 </head>
 
 <body>
