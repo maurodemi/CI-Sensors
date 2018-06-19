@@ -5,36 +5,37 @@
 <!--Time: 12:39-->
 
 <?php
-  defined('BASEPATH') OR exit('No direct script access allowed');
+    defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
 
-	<title>Login</title>
+<!--header.php-->
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <header> <!--Header-->
+        <h1></h1>
+    </header>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--<link rel="stylesheet" href="../resources/css/style.css">-->
-</head>
-
-<body>
-    <div> <!--FORM LOGIN-->
-        <form action="home.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="Email">
-            <label for="password">Password:</label>
-            <input type="password" name="password" placeholder="Password">
-            <button type="submit">Login</button>
+    <div class="login"> <!--Form del Login-->
+        <form action="<?php echo site_url('welcome/login'); ?>" method="post">
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" placeholder="Email" required> <br>
+            <label for="password">Password:</label> <br>
+            <input type="password" name="password" placeholder="Password" required> <br>
+            <button type="submit" class="btn">Login</button>
         </form>
+        <!--Permette di far comparire un scritta di errore se i dati non vengono inseriti-->
+        <!--<?php //if(function_exists('validation_errors')) {echo validation_errors();} ?>-->
     </div>
-    <div> <!--LOGIN FREE-->
-        <br>
-        <a href="home.php"><button>Login free</button></a>
+    <div class="login"> <!--Login Free/Sign in-->
+        <label for="">Accedi:</label>
+        <a href="<?php echo site_url('welcome/loginFree'); ?>"><button class="btn">Login free</button></a>
+        <br><br>
+        <label for="">Iscriviti:</label>
+        <a href="<?php echo site_url('welcome/signin'); ?>"><button class="btn">Sign in</button></a>
     </div>
-</body>
-</html>
+
+    <footer> <!--Footer-->
+        <p></p>
+    </footer>
+
+<!--footer.php-->

@@ -5,29 +5,25 @@
 <!--Time: 14:17-->
 
 <?php
-  defined('BASEPATH') OR exit('No direct script access allowed');
+    defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
 
-    <title>Home page</title>
+<!--header.php-->
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <header> <!--Header-->
+        <h1></h1>
+        <a href="<?php echo site_url('welcome/logout'); ?>"><button class="btnLogout">Logout</button></a>
+    </header>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--<link rel="stylesheet" href="--><?php //echo $this->config->item('resources')['css']?><!--/style.css">-->
-</head>
-
-<body>
-    <div>
-        <!--HOME PAGE-->
+    <div> <!--Home Page-->
         <h1>Home page</h1>
-
+        <p>Benvenuto!</p>
     </div>
-</body>
-</html>
+
+    <footer> <!--Footer-->
+        <p></p>
+    </footer>
+
+<!--footer.php-->
 
