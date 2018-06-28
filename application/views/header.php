@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Serve per mettere una icona vicino al titolo della scheda-->
-    <link rel="icon" href="">
+    <link rel="icon" href="<?php echo $this->config->item('resources')['img']?>/iconSensor.png">
 
     <!--Link al cdn di bootstrap-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">

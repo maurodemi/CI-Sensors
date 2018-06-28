@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model extends CI_Model {
 
-    // Login
+    //Login.
     function validate_credentials($email,$password) {
         //Faccio una query che verifichi che email e password abbiano una corrispondenza nel db.
         $this->db->select('*');
@@ -25,8 +25,6 @@ class Model extends CI_Model {
             return null;
         }
     }
-
-    // CRUD: Create-Read-Update-Delete
 
     //Inserisco i dati di un nuovo utente.
     function saveUser($table,$data) {

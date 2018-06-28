@@ -1,8 +1,11 @@
 body {
     margin: 0px; /*aggiunge una distanza dai suoi elementi esterni*/
     padding: 0px; /*aggiunge una distanza dai suoi elementi interni*/
-    background-color: #e5e5e5;
     text-align: center;
+    /*background-color: #e5e5e5;*/
+    background-image: url("../img/bgGif.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header {
@@ -10,13 +13,20 @@ header {
     height: 70px;
     /*background-color: #030303;*/
     /*background: linear-gradient(top right, #FFFFFF 0%, #AACFEF 100%);*/
-    background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#000022));
+    /*background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#000022));*/
 }
 
 footer {
     padding: 20px; /*aggiunge una distanza dai suoi elementi interni*/
     /*background-color: #030303;*/
+}
 
+h1 {
+    color: #fff;
+}
+
+.active>h1, .disactive>h1 { /*Seleziono solamente gli h1 che stanno dentro al tag con classe .active*/
+    color: #fff;
 }
 
 .login {
@@ -66,6 +76,10 @@ input {
     font: bold 14px Arial, Helvetica, sans-serif;
 }
 
+.title {
+    color: #f00;
+}
+
 .btnLogout {
     /*margin: 10px; !*aggiunge una distanza dai suoi elementi esterni*!*/
     padding: 0 20px; /*aggiunge una distanza dai suoi elementi interni*/
@@ -86,4 +100,65 @@ input {
     cursor: pointer;
     color: #fff;
     border: 1px solid #000; /*corrisponde a: border-width: 1px; border-style: solid; border-color: #000;*/
+}
+
+table {
+    /*margin-top: 50px;*/
+    width:70%;
+    /*margin-left:15%;*/
+    /*margin-right:15%;*/
+    color: #000;
+    border: 1px solid #000;
+    /*border-collapse: collapse;*/
+}
+
+.tableSensors {
+    margin-top: 50px;
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+.tableSamples {
+    margin-top: 50px;
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    color: #fff;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+tr, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #eaeaea;
+    color: black;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+select {
+    margin: 10px 0 30px 0; /*aggiunge una distanza dai suoi elementi esterni*/
+    padding: 10px 20px; /*aggiunge una distanza dai suoi elementi interni*/
+}
+
+img {
+    /*margin: 5px; !*aggiunge una distanza dai suoi elementi esterni*!*/
+    /*padding: 10px 20px; !*aggiunge una distanza dai suoi elementi interni*!*/
+    width: 30px;
+    height: 30px;
 }
