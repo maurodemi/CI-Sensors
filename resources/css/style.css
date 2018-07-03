@@ -102,6 +102,17 @@ input {
     border: 1px solid #000; /*corrisponde a: border-width: 1px; border-style: solid; border-color: #000;*/
 }
 
+.btnStatus {
+    padding: 0; /*aggiunge una distanza dai suoi elementi interni*/
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btnStatus:hover {
+    cursor: pointer;
+    border-color: transparent;
+}
+
 table {
     /*margin-top: 50px;*/
     width:70%;

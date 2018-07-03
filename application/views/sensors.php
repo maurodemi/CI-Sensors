@@ -44,9 +44,11 @@
                             echo('<td>'.$row['location'].'</td>');
                             echo('<td>'.$row['active'].'</td>');
                             echo('<td>');
-                            echo anchor('app/readSamples','Samples',array('name'=>'abc'));
+                            echo anchor('app/readSamples/'.$row['id'].'/'.$row['code'],'Samples');
                             echo('</td>');
-                            echo('<td>'.'<img src="../../resources/img/v.jpg">'.'</td>');
+                            echo('<td>');
+                            echo anchor('app/changeStatus/'.$row['id'].'/'.$row['active'], img(array('src'=>'/../resources/img/v.jpg', 'width'=>'200', 'height'=>'200')));
+                            echo('</td>');
                         echo('</tr>');
                     }
                 }
@@ -76,9 +78,11 @@
                             echo('<td>'.$row['location'].'</td>');
                             echo('<td>'.$row['active'].'</td>');
                             echo('<td>');
-                            echo anchor('app/readSamples','Samples');
+                            echo anchor('app/readSamples/'.$row['id'].'/'.$row['code'],'Samples');
                             echo('</td>');
-                            echo('<td>'.'<img src="../../resources/img/x.jpg">'.'</td>');
+                            echo('<td>');
+                            echo anchor('app/changeStatus/'.$row['id'].'/'.$row['active'], img(array('src'=>'/../resources/img/x.jpg', 'width'=>'200', 'height'=>'200')));
+                            echo('</td>');
                         echo('</tr>');
                     }
                 }

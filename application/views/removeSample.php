@@ -1,8 +1,8 @@
 
 <!--Created by PhpStorm.-->
 <!--User: mdemichelis-->
-<!--Date: 20/06/2018-->
-<!--Time: 17:10-->
+<!--Date: 29/06/2018-->
+<!--Time: 15:15-->
 
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
@@ -15,13 +15,13 @@
         <h1></h1>
     </header>
 
-    <div class="login"> <!--Rimuovo un sensore-->
-        <h1 class="title">Remove sensor</h1>
-        <form action="<?php echo site_url('app/deleteSensor'); ?>" method="post">
+    <div class="login"> <!--Rimuovo un campione-->
+        <h1 class="title">Remove sample</h1>
+        <form action="<?php echo site_url('app/deleteSample/'); ?>" method="post">
             <?php
-                echo "<select name=\"selectSensor\">";
+                echo "<select name=\"selectSample\">";
                 foreach($data as $row) {
-                    echo "<option value=\"".$row['id']."\">".$row['code']."  ,  ".$row['location']."  ,  ".$row['active']."</option>";
+                    echo "<option value=\"".$row['id']."\">".$row['sensor_id']."  ,  ".$row['datetime']."  ,  ".$row['value']."</option>";
                 }
                 echo "</select>";
                 echo "<br>";
